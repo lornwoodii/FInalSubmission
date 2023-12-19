@@ -1,0 +1,109 @@
+/* Format the html document so that it has scroll bars. */
+html{
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+/* Create and apply the desired background color and text font for the body of the website. */
+body{
+    background-color: rgb(255, 248, 239);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Create styling for the navagation bar of the website. The desired location and color of the nav bar is applied. */
+nav{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: brown;
+}
+/* Styling of the links in the nav bar. Padding is configured so that when hovered on the links pop up more. Text decoration is set to none in order to remove the underline in links. */
+a{
+    font-size: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+}
+/* Style the link if hovered on. */
+a:hover{
+    background-color: red;
+}
+
+/* A class used on text in order to have proper location in the webpage. */
+.textIndent{
+    margin-left: 150px;
+}
+/* the mainMessage id is used on the main message of the website on the homepage. It provides stylings for proper space between headings. */
+#mainMessage{
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+
+/* Configure proper styling and positioning for the container of an image gallery. */
+main{
+    margin: 40px auto;
+    justify-content: center;
+}
+/* Center figcaptions of figures. */
+figcaption{
+    text-align: center;
+}
+/* A class creates a flex box with the proper properties that will move images based on browser window size */
+.ImageContainer{
+    display:flex;
+    flex-flow:row wrap;
+}
+/* A class that sets all flex items as the same length */
+.flexItems{
+    flex:1;
+}
+/* The center class applies a display block and centers using margins. Mainly used on images. */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* The centerText class centers text with the text-align property. This class allows the use of centered text on specific text regardless of the selector or tag. */
+.centerText{
+    text-align: center;
+}
+/* Slightly modify the top margin of hr tag. */
+hr{
+    margin-top: 60px;
+}
+/* The productImg class is used specifically on the images of the products in the product webpage. Used mainly to properly position product images. */
+.productImg{
+    width: 13%;
+    float: left;
+    margin-left: 13%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+/* The productDescription class is used specifically on the descriptions of the product images. Used for proper reactive sizing, positioning, and general styling such as borders. */
+.productDescription{
+    width: 10%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 100px;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: bisque;
+    overflow: hidden;
+}
+/* The clear class is used mainly on the products page. It used to clear the floats on the left side of the third product image. */
+.clear{
+    display: block;
+    clear: left;
+}
+/* The class bioInfo is used only on the descriptions of the workers of Kohlman and Lee's. Acts as a container for text so that they can be sized with the desired position relative to the employee images. */
+.bioInfo{
+    display: block;
+    margin: 30px auto;
+    width: 500px;
+}
+/* The footerLine Id is used for the hr tag in the footer tag. Provides the desired height and size of the footer.  */
+#footerLine{
+    margin-top: 10%;
+}
